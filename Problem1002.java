@@ -9,3 +9,16 @@ Present the message "A=" followed by the value of the variable,
 as in the example bellow, with four places after the decimal point. Use all double precision variables. 
 */
 
+import java.util.Scanner;
+
+public class beecrowd {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Value: ");
+        int R = input.nextInt();
+        double pi = 3.14159;
+        double area = R*R*pi;
+
+        System.out.printf("A= %.4f%n", area);
+    }
+}
