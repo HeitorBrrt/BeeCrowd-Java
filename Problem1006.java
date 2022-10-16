@@ -9,3 +9,21 @@ Output
 Print the message "MEDIA"(average in Portuguese) and the student's average according to the following example,
 with a blank space before and after the equal signal.
 */
+
+import java.util.Scanner;
+
+public class beecrowd {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Grade A: ");
+        double A = input.nextDouble();
+        System.out.print("Grade B: ");
+        double B = input.nextDouble();
+        System.out.print("Grade C: ");
+        double C = input.nextDouble();
+
+        double average = ((A*2)+(B*3)+(C*5))/10;
+
+        System.out.printf("MEDIA = %.1f%n", average);
+    }
+}
