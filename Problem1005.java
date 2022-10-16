@@ -11,3 +11,19 @@ Output
 Print the message "MEDIA"(average in Portuguese) and the student's average according to the following example, 
 with 5 digits after the decimal point and with a blank space before and after the equal signal.
 */
+
+import java.util.Scanner;
+
+public class beecrowd {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("First grade: ");
+        double A = input.nextDouble();
+
+        System.out.print("Second grade: ");
+        double B = input.nextDouble();
+
+        double average = ((A*3.5)+(B*7.5))/11.0;
+        System.out.printf("MEDIA = %.5f%n", average);
+    }
+}
